@@ -18,9 +18,9 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-ഹായ് {}, എന്റെ പേര് {}! എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help കൊടുത്താൽ മതിയാകും... സംശയങ്ങൾക്ക് @MarieBotMalayalamSupport എന്ന ഗ്രൂപ്പിൽ വരാവുന്നതാണ്.....
+ഹായ് {}, എന്റെ പേര് {jayalal}! എന്നെ ഉപയോഗിക്കേണ്ടത് എങ്ങനെ ആണെന്നുള്ളതിൽ എന്തേലും സംശയം ഉണ്ടെങ്കിൽ /help കൊടുത്താൽ മതിയാകും... സംശയങ്ങൾക്ക് @MarieBotMalayalamSupport എന്ന ഗ്രൂപ്പിൽ വരാവുന്നതാണ്.....
 
-എന്നെ നോക്കി നടത്തുന്നത്  [ഇദ്ദേഹം](tg://user?id={}) ആണ് . എന്നെ നിർമിച്ചിരിക്കുന്നത് python3യിൽ 
+എന്നെ നോക്കി നടത്തുന്നത്  [ഇദ്ദേഹം](tg://user?id={@harilajs}) ആണ് . എന്നെ നിർമിച്ചിരിക്കുന്നത് python3യിൽ 
 python-telegram-bot library ഉപയോഗിച്ചാണ്.... ഞാൻ പൂർണമായും opensource ആണ്.. എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](github.com/AbinPaulZackariah/mariebot-malayalam) കാണാവുന്നതാണ്...
 എന്നെ ഉപയോഗിക്കാൻ ആവിശ്യമായ commandകൾ അറിയാൻ /help കൊടുത്താൽ മതിയാകും..
 
@@ -380,7 +380,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 762693347 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
